@@ -14,7 +14,6 @@
 // var i = 9;
 // var j = 100;
 
-
 // var avg1 = (a+b+c+d+e)/5;
 // var avg2 = (f+g+h+i+j)/5;
 // var avg3 = (avg1+avg2)/2;
