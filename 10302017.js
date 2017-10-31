@@ -1,3 +1,8 @@
+// October 30, 2017 
+// TOPIC: conditional statements
+
+
+// EXERCISE 1: Write a program to calculate avg of first five numbers, avg of the last five numbers, and the total avg.
 // var a = 4;
 // var b = 10;
 // var c = 22;
@@ -18,6 +23,9 @@
 // console.log("The second average is: " + avg2);
 // console.log("The total average is: " + avg3);
 
+
+
+// EXERCISE 2A: Write conditional statements that display whether an integer is positive or negative
 // var integer = 9;
 // var integer = -9;
 // if(integer > 0) {
@@ -26,16 +34,18 @@
 // 	console.log(integer + ' is a negative number');
 // }
 
-/*
-var a = 1;
-a -= 5;
-if(a > 0) { 
-	console.log(a + ' is a positive number');
-} else { 
-	console.log(a + ' is a negative number');
-}
-*/
+// EXERCISE 2B: Write conditional statements to display whether an integer is positive or negative
+// var a = 1;
+// a -= 5;
+// if(a > 0) { 
+// 	console.log(a + ' is a positive number');
+// } else { 
+// 	console.log(a + ' is a negative number');
+// }
 
+
+
+// EXERCISE 3: Write a nested conditional block that will translate a numerical grade into a letter grade
 // grade = 55;
 
 // if(grade < 55) { 
@@ -52,8 +62,10 @@ if(a > 0) {
 // 	}
 // }
 
-for (var i = 1; i < 11; i++) {
-	console.log(i);
-}
+
+// EXERCISE 4: Write a for loop that will print out the value of iterator with each iteration
+// for (var i = 1; i < 11; i++) {
+// 	console.log(i);
+// }
 
 
