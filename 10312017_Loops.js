@@ -41,6 +41,10 @@
 // 	console.log(a);
 // 	a += '#';
 // }
+// METHOD 3 (FANCY)
+// for(var i = '#'; i !== '########'; i += '#') {
+// 	console.log(i);
+// }
 
 
 
