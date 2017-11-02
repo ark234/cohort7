@@ -71,18 +71,27 @@
 // Write a loop that says how many quarters he got in return.
 
 // const cookieCost = 4;
-// console.log('Cookie costs $4.');
+// console.log('Cookie costs $4');
+
 // var pocketMoney = 10;
 // console.log('Nando inserted $10');
+
 // var changeRemaining = pocketMoney - cookieCost;
 // var quarters = 0;
 
+// WHILE SOLUTION
 // while(changeRemaining > 0) {
 // 	console.log('Change remaining: $' + changeRemaining);
 // 	console.log('Dispensing a quarter... ')
 // 	quarters++;
 // 	changeRemaining -= 0.25;
+// }
 
+// FOR LOOP SOLUTION
+// for (var i = changeRemaining; i > 0; i -= 0.25) {
+// 	console.log('Change remaining: $' + i);
+// 	console.log('Dispensing a quarter...');
+// 	quarters++
 // }
 
 // console.log('Total quarters dispensed: ' + quarters);
