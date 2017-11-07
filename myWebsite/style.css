@@ -1,0 +1,17 @@
+header {
+	text-align: center;
+	background-color: rgba(230, 130, 40, .9);
+	background-image: url("nyc.jpg");
+	background-clip: content-box;
+}
+body {
+	text-align: center;
+	background-color: rgba(100, 200, 250, .9);
+}
+footer {
+	text-align: center;
+	background-color: rgba(70, 80, 80, .9);
+}
+h1 {
+	font-size: 72px;
+}
