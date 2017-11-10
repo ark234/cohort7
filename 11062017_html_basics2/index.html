@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		body {
+			background: url("matrix.gif");
+		}
+		header {
+			color: white;
+			font: courier;
+			font-size: 36px;
+		}
+		table, tr, td, th {
+			border: solid;
+		}
+		table {
+			width: 400px; height: 500px;
+		}
+		th {
+			width: 400px; height: 100px;
+			font-size: 54px;
+			background-color: rgba(0,0,0,0.8);
+			color: white;
+		}
+		td {
+			font-size: 36px;
+		}
+		.btn {
+			width: 100px; height: 100px;
+			font-size: 36px;
+		}
+		.btn2 {
+			width: 320px; height: 100px;
+			font-size: 36px;
+		}
+		.opBtn {
+			width: 100px; height: 100px;
+			font-size: 36px;
+			background-color: orange;
+		}
+		output {
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<header>
+			<h1>Ark's Calculator</h1>
+		</header>
+		<table>
+			<tr>
+				<th colspan="4" align="right">
+					<!-- <input type="input" placeholder="0"> -->
+					<output name="result"></output>
+				</th>
+
+			</tr>
+			<tr>
+				<td><button class="btn" name="seven" type="input" value="7">7</button></td>
+				<td><button class="btn" name="eight" type="input" value="8">8</button></td>
+				<td><button class="btn" name="nine" type="input" value="9">9</button></td>
+				<td><button class="opBtn" name="multiply" type="input">x</button></td>
+			</tr>
+			<tr>
+				<td><button class="btn">4</button></td>
+				<td><button class="btn">5</button></td>
+				<td><button class="btn">6</button></td>
+				<td><button class="opBtn">-</button></td>
+			</tr>
+			<tr>
+				<td><button class="btn">1</button></td>
+				<td><button class="btn">2</button></td>
+				<td><button class="btn">3</button></td>
+				<td><button class="opBtn">+</button></td>
+			</tr>
+			<tr>
+				<td colspan="3"><button class="btn2">0</button></td>
+				<td><button class="opBtn">=</button></td>
+			</tr>
+		</table>
+	</center>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
