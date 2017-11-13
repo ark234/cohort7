@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Navigation Bar</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<style type="text/css">
+	#menu {
+		display: flex;
+		font-size: 36px;
+		animation-name: moveRight;
+		animation-duration: 3s;
+	}
+	.menuItems {
+		flex: 1;
+		text-align: center;
+	}
+	#menuItem1 {
+		background-color: rgba(234, 123, 40, 1);
+		animation-name: colorToggle;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+	#menuItem2 {
+		background-color: rgba(58, 115, 240, 1);
+		animation-name: colorToggle2;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+	#menuItem3 {
+		background-color: rgba(234, 123, 40, 1);
+		animation-name: colorToggle;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes colorToggle {
+		from {background-color: rgba(234, 123, 40, 1);}
+		to {background-color: rgba(58, 115, 240, 1);}
+	}
+	@keyframes colorToggle2 {
+		from {background-color: rgba(58, 115, 240, 1);}
+		to {background-color: rgba(234, 123, 40, 1);}
+	}
+	@keyframes moveRight {
+		from {width: 0px;}
+		to {width: 100%;}
+	}
+</style>
+<body>
+	<nav id="menu">
+		<div class="menuItems" id="menuItem1">
+			<a href="#">Projects</a>
+		</div>
+		<div class="menuItems" id="menuItem2">
+			<a href="#">Info</a>
+		</div>
+		<div class="menuItems" id="menuItem3">
+			<a href="#">Store</a>
+		</div>
+	</nav>
+	
+</body>
+</html>

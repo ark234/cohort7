@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hover Animation</title>
+	<style type="text/css">
+		#parent {
+			width: 400px;
+			height: 400px;
+			border: 2px solid black;
+			display: inline-flex;
+			flex-wrap: wrap;
+			margin: 250px 0 0 250px;
+			position: relative;
+		}
+		#parent:hover #one{
+			transform: translate(-200px) rotate(90deg);
+			transition: 2s;
+		}
+		#parent:hover #two{
+			transform: translate(200px) rotate(-90deg);
+			transition: 2s;
+		}
+		#parent:hover #three{
+			transform: translate(-200px) rotate(-90deg);
+			transition: 2s;
+		}
+		#parent:hover #four{
+			transform: translate(200px) rotate(90deg);
+			transition: 2s;
+		}
+		.child {
+			width: 200px;
+			height: 200px;
+			z-index: 2;
+		}
+		#one {
+			background-color: red;
+			transition: 1s;
+		}
+		#two {
+			background-color: yellow;
+			transition: 1s;
+		}
+		#three {
+			background-color: blue;
+			transition: 1s;
+		}
+		#four {
+			background-color: green;
+			transition: 1s;
+		}
+		p {
+			font-size: 36px;
+			position: absolute;
+			margin: 0;
+			top: 50%;
+			left: 50%;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div id="parent">
+		<p>Hi!</p>
+		<div class="child" id="one"></div>
+		<div class="child" id="two"></div>
+		<div class="child" id="three"></div>
+		<div class="child" id="four"></div>
+	</div>
+</body>
+</html>
