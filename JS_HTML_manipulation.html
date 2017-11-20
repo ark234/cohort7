@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 3.1</title>
+	<style type="text/css">
+		#button1 {
+			height: 50px; 
+			width: 200px;
+			background: linear-gradient(blue, yellow, green);
+		}
+	</style>
+</head>
+<body>
+	<h1 class="headings" id="heading1">HEADING 1</h1>
+	<h1 class="headings" id="heading2">HEADING 2</h1>
+	<h1 class="headings" id="heading3">HEADING 3</h1>
+
+	<button id="button1" type="button">CHANGE COLOR</button>	
+
+	<script type="text/javascript">
+		// cache HTML elements into JS variables
+		// getElementsByClassName returns an object
+		var h = document.getElementsByClassName('headings');
+		var b = document.getElementById('button1');
+
+		// attach event listener to button that will change colors
+		// of each child of the h object
+		b.addEventListener('click', function(){
+			h[0].style = "background-color:blue";
+			h[1].style = "background-color:yellow";
+			h[2].style = "background-color:green";
+		});
+	</script>
+</body>
+</html>
