@@ -31,15 +31,41 @@
 		function move() {
 			var elem = document.getElementById("myAnimation");
 			var pos = 0;
+			var posVertical = 0;
+			var posHorizontal = 0;
 			var id = setInterval(frame, 5);
 
 			function frame() {
-				if (pos == 350) {
-					clearInterval(id);
+				// if (pos == 350) {
+				// 	clearInterval(id);
+				// 	pos = 0;
+				// } else {
+				// 	pos++;
+				// 	elem.style.top = `${pos}px`;
+				// 	elem.style.left = `${pos}px`;
+				// }
+				// 
+				
+				if(pos == 1400) {
+					clearInterval(id);	
 				} else {
-					pos++;
-					elem.style.top = `${pos}px`;
-					elem.style.left = `${pos}px`;
+					if(pos <= 350) {
+						pos++;
+						posHorizontal++;
+						elem.style.left = `${posHorizontal}px`;
+					} else if(pos <= 700) {
+						pos++;
+						posVertical++;
+						elem.style.top = `${posVertical}px`;
+					} else if(pos <= 1050) {
+						pos++;
+						posHorizontal--;
+						elem.style.left = `${posHorizontal}px`;
+					} else {
+						pos++;
+						posVertical--;
+						elem.style.top = `${posVertical}px`;
+					}
 				}
 			}
 		}
